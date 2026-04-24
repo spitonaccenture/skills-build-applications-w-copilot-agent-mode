@@ -13,7 +13,7 @@ function Users() {
     try {
       const codespaceName = process.env.REACT_APP_CODESPACE_NAME;
       const baseURL = codespaceName
-        ? `https://${codespaceName}-8000.app.github.dev`
+        ? `https://${codespaceName}-8000.app.github.dev/api/users/`
         : 'http://localhost:8000';
       const apiURL = `${baseURL}/api/users/`;
 
